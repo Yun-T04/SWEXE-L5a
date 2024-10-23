@@ -12,6 +12,6 @@
 
   <body>
     <%= yield %>
-    <p style="background-color: lightgray">ログイン中UID:<%= session[:login_uid] %></p>
+    <p style="background-color: lightgray">ログイン中UID:<%= current_user.uid if current_user%></p>
   </body>
 </html>

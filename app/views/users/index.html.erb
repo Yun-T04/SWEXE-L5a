@@ -1,5 +1,5 @@
 <% @users.each do |e| %>
-  uid: <%= e.uid %>, pass: <%= e.pass %>
+  uid: <%= e.uid %>, password_digest: <%= e.password_digest %>
   <%= link_to '削除', user_path(e), data: { turbo_method: :delete } %>
   <br>
 <% end %>
